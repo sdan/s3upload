@@ -1,0 +1,27 @@
+{
+  "name": "micro-s3-example",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Simple example using Zeit's micro, AWS SDK and Zeit's Now 2.0 for upload and fetch of images.",
+  "scripts": {
+    "deploy": "npm run deploy-to-now && npm run alias && npm run rm",
+    "deploy-to-now": "now",
+    "alias": "now alias",
+    "rm": "now rm s3-example --safe --yes",
+    "test": "ava test.js"
+  },
+  "workspaces": [
+    "api",
+    "www"
+  ],
+  "author": "paulogdm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulogdm/micro-s3-example/issues"
+  },
+  "homepage": "https://github.com/paulogdm/micro-s3-example#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulogdm/micro-s3-example.git"
+  }
+}
